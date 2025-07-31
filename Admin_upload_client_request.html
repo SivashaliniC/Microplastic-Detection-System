@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Upload Widget</title>
+<link href="adminuploadencripted/css/bootstrap.css" rel='stylesheet'
+	type='text/css' />
+<link href="adminuploadencripted/css/style.css" rel="stylesheet"
+	type="text/css" media="all" />
+<script src="adminuploadencripted/js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="File Upload Widget Responsive web template, Bootstrap Web Templates" />
+<script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+        function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+<style>
+body {
+	background-image: url('bck3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+</style>
+</head>
+<body>
+
+	<h1>FILE UPLOAD</h1>
+
+	<div class="upload">
+		<h3>Select File</h3>
+		<div class="login-form">
+			<form>
+				<div>
+					<span>Title</span> <input type="text" class="title"
+						value="Eg: Water resource" onfocus="this.value = '';"
+						onblur="if (this.value == '') {this.value = 'Eg: Water resource';}" />
+				</div>
+				<div>
+					<span>Description</span> <input type="text" class="describe"
+						value="Eg: The one in the Sea" onfocus="this.value = '';"
+						onblur="if (this.value == '') {this.value = 'Eg: The one in the Sea';}" />
+				</div>
+			</form>
+
+		<form action="Adminupload" method="post" enctype="multipart/form-data">
+    <label>Title:</label> 
+    <input type="text" name="title" required><br>
+
+    <label>Description:</label> 
+    <input type="text" name="description" required><br>
+
+    <label>Select File:</label> 
+    <input type="file" name="file" required><br>
+
+    <input type="submit" value="Upload">
+</form>
+
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+			<!-- Cancel Button -->
+			<button type="button" onclick="cancelUpload()">Cancel</button>
+		</div>
+
+		<!-- JavaScript Includes -->
+		<script src="adminuploadencripted/js/jquery.knob.js"></script>
+		<script src="adminuploadencripted/js/jquery.ui.widget.js"></script>
+		<script src="adminuploadencripted/js/jquery.iframe-transport.js"></script>
+		<script src="adminuploadencripted/js/jquery.fileupload.js"></script>
+		<script src="adminuploadencripted/js/script.js"></script>
+
+		<!-- Cancel Button Script -->
+		<script>
+        function cancelUpload() {
+            window.location.href = 'adminhomepage.html';
+        }
+    </script>
+
+	</div>
+
+	<div class="footer">
+		<br>
+	</div>
+
+</body>
+</html>

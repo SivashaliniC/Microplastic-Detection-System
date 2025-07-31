@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/uf-style.css">
+    
+    <title>DetectAccount Login</title>
+
+    <style>
+      /* Background styling */
+      body {
+        background: url('./assets/img/login.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      /* Overlay effect for readability */
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+      }
+
+      /* Form container */
+      .uf-form-signin {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Form heading */
+      .uf-form-signin h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      /* Input fields */
+      .uf-input-group {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .uf-input-group input {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .uf-input-group input::placeholder {
+        color: #ddd;
+      }
+
+      .uf-input-group span {
+        color: #fff;
+        padding-right: 10px;
+      }
+
+      /* Button styles */
+      .uf-btn-primary {
+        background: linear-gradient(to right, #ff8c00, #ff4500);
+        border: none;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .uf-btn-primary:hover {
+        background: linear-gradient(to right, #ff4500, #ff8c00);
+      }
+
+      /* Forgot password & Sign up links */
+      a {
+        color: #ffcc00;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+
+      /* Back button */
+      .back-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .back-button a {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+
+      .back-button a:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="overlay"></div>
+
+    <div class="uf-form-signin">
+      <div class="text-center">
+        <h1 class="text-white h3">DetectAccount Login</h1>
+      </div>
+
+      <!-- Add action and method to the form -->
+      <form class="mt-4" action="detectlogin" method="POST">
+        <div class="input-group uf-input-group input-group-lg mb-3">
+          <span class="input-group-text fa fa-user"></span>
+          <input type="text" class="form-control" placeholder="Username or Email address" name="username" autocomplete="off" required>
+        </div>
+        <div class="input-group uf-input-group input-group-lg mb-3">
+          <span class="input-group-text fa fa-lock"></span>
+          <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off" required>
+        </div>
+        <div class="d-flex mb-3 justify-content-between">
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="d-grid mb-4">
+          <button type="submit" class="btn uf-btn-primary btn-lg">Login</button>
+        </div>
+        <div class="d-grid mb-4">
+          <a href="module2_mailstatus.html" class="btn uf-btn-primary btn-lg">Check Status</a>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="dropdown-divider m-auto w-25"></div>
+          <small class="text-nowrap text-white">Or login with</small>
+          <div class="dropdown-divider m-auto w-25"></div>
+        </div>
+        <div class="mt-4 text-center">
+          <span class="text-white">Don't have an account?</span>
+          <a href="module2_register.html">Sign Up</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Back button at the bottom-right corner -->
+    <div class="back-button">
+      <a href="index.html" class="btn btn-secondary btn-lg">
+        <i class="fa fa-arrow-left"></i> Back
+      </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,410 @@
+/*--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+    article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+    ol,ul{list-style:none;padding:0;margin:0;}
+    blockquote,q{quotes:none;}
+    blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+    table{border-collapse:collapse;border-spacing:0;}
+    /* start editing from here */
+    a{text-decoration:none;}
+    .txt-rt{text-align:right;}/* text align right */
+    .txt-lt{text-align:left;}/* text align left */
+    .txt-center{text-align:center;}/* text align center */
+    .float-rt{float:right;}/* float right */
+    .float-lt{float:left;}/* float left */
+    .clear{clear:both;}/* clear float */
+    .pos-relative{position:relative;}/* Position Relative */
+    .pos-absolute{position:absolute;}/* Position Absolute */
+    .vertical-base{ vertical-align:baseline;}/* vertical align baseline */
+    .vertical-top{  vertical-align:top;}/* vertical align top */
+    .underline{ padding-bottom:5px; border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+    nav.vertical ul li{ display:block;}/* vertical menu */
+    nav.horizontal ul li{   display: inline-block;}/* horizontal menu */
+    img{max-width:100%;}
+    /*img[width],img[height]{width:auto;height:auto;} wordpress hack to reset the attributes (while making responsive) */
+
+/*-- Reset Code --*/
+
+
+
+/*-- Index-Page-Styling --*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: url("../images/b4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*--agileits--*/
+    /*--w3layouts--*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+a, a:hover {    
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.wrapper {
+      box-sizing: border-box;
+    width: 640px;
+    margin: 4em auto 0;
+    text-align: center;
+}
+.banner-info {
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+	text-align:center;
+	padding: 3em 0;
+	min-height: 700px;
+}
+.w3l-info h3 {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	letter-spacing: 5px;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+    /*--agileits--*/
+    /*--w3layouts--*/
+    margin-left: 15px;
+}
+
+ .w3-border-bottom h3 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.w3l-info h4 {
+    font-size: 3em;
+    background: #04ecf596;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0.2em;
+    letter-spacing: 2px;
+}
+.w3-border-bottom {
+    margin: 2em 0;
+}
+.w3l-info {
+    margin: 2em 0;
+}
+.w3-border-bottom h3:before {
+    content: '';
+    background: #26bdef;
+    height: 2px;
+    position: absolute;
+    width:15%;
+	top: 57%;
+    left: 10%;
+}
+.w3-border-bottom h3:after {
+    content: '';
+    background: #26bdef;
+    height: 2px;
+    position: absolute;
+    width:15%;
+	top: 57%;
+    right:10%;
+}
+
+.timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ .text {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.clock .column {
+    display: inline-block;
+    width: 24%;
+}
+
+.days {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .timer {
+        font-size: 35px;
+    }
+}
+
+.clear-loading {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.newsletter {
+    position: relative;
+    width: 75%;
+    margin: 50px auto 20px;
+}
+
+.newsletter .email {
+   width: 90%;
+    padding: 15px 50px 15px 15px;
+    border-radius: 3px;
+    color: #FFF;
+    /*--agileits--*/
+    /*--w3layouts--*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: transparent;
+    border: 2px solid #FFF;
+}
+
+.newsletter .submit {
+   width: 40px;
+    height: 40px;
+    background-image: url(../images/subscribe1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-color: transparent;
+    top: 6px;
+    right: -13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.wrapper p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+::-moz-placeholder {
+    color: #FFF;
+}
+
+::-moz-placeholder {
+    color: #FFF;
+}
+
+::-ms-input-placeholder {
+    color: #FFF;
+}
+
+.footer {
+    margin: 50px 10px 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #EEE;
+	letter-spacing: 2px;
+    /*--agileits--*/
+    /*--w3layouts--*/
+    line-height: 25px;
+}
+
+.footer p a {
+    color:#26bdef;
+}
+
+.footer p a:hover {
+    color: #FFF;
+}
+
+/*-- //Index-Page-Styling --*/
+/*-- /responsive design --*/
+
+@media(max-width:1080px){
+	.w3l-info h4 {
+    font-size: 3em;
+      width: 37%;
+    margin: 0 auto;
+    padding: 0.2em;
+    letter-spacing: 2px;
+}
+.w3l-info h3 {
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+}
+@media(max-width:1024px){
+	
+}
+@media(max-width:991px){
+}
+@media(max-width:800px){
+	.w3l-info h3 {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+}
+.w3l-info h4 {
+    font-size: 2.5em;
+    width: 50%;
+}
+.timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 54px;
+}
+.banner-info {
+    min-height: 581px;
+}
+.w3l-info h3 {
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+}
+@media(max-width:768px){
+	.banner-info {
+    min-height: 838px;
+}
+}
+@media(max-width:736px){
+	.clock .column {
+    width: 20%;
+}
+.banner-info {
+    min-height: 581px;
+}
+}
+@media(max-width:667px){
+}
+@media(max-width:640px){
+	.w3l-info h3 {
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+}
+@media(max-width:600px){
+}
+@media(max-width:568px){
+	.w3l-info h4 {
+    font-size: 2em;
+    width: 61%;
+}
+}
+@media(max-width:480px){
+	.w3l-info h3 {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+.newsletter .email {
+    width: 81%;
+}
+.newsletter .submit {
+    right: 5px;
+}
+}
+@media(max-width:414px){
+	.w3l-info h3 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+.w3l-info h4 {
+    font-size: 1.5em;
+    width: 68%;
+}
+.timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 43px;
+}
+}
+@media(max-width:384px){
+	.flex-control-paging li a {
+    width: 10px;
+    height: 10px;
+}
+.wrapper p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.wrapper {
+    margin: 2em auto 0;
+}
+.timer {
+    font-size: 31px;
+}
+.clock .column {
+    width: 34%;
+    margin-bottom: 1em;
+}
+.newsletter {
+    width: 76%;
+    margin: 20px auto 18px;
+}
+.banner-info {
+    padding: 1em 0;
+}
+.footer p {
+    line-height: 25px;
+}
+.newsletter .email {
+    width: 73%;
+}
+}
+@media(max-width:375px){
+	.footer p {
+    letter-spacing: 0px;
+}
+.w3l-info h3 {
+    font-size: 2.1em;
+    letter-spacing: 1px;
+}
+.banner-info {
+    min-height: 654px;
+}
+}
+@media(max-width:320px){
+	.w3l-info h3 {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+}
+/*-- /responsive design --*/
