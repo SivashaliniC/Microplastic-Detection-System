@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <title>Enrichment Login</title>
+    <style>
+      body {
+        background: url('./assets/img/login.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .uf-form-signin {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+      }
+      .uf-form-signin h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      .input-group-text {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+      }
+      .form-control {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        color: #fff;
+      }
+      .form-control::placeholder {
+        color: #ddd;
+      }
+      .btn {
+        font-size: 1.1rem;
+        border-radius: 8px;
+      }
+      .back-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="uf-form-signin text-center text-white">
+      <h1>Account Login</h1>
+      <form action="enrichmentlogin" method="POST">
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text fa fa-user"></span>
+          <input type="text" class="form-control" placeholder="Username or Email" name="username" autocomplete="off" required>
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text fa fa-lock"></span>
+          <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off" required>
+        </div>
+        <div class="d-flex mb-3 justify-content-between">
+          <a href="#" class="text-white">Forgot password?</a>
+        </div>
+        <div class="d-grid mb-3">
+          <button type="submit" class="btn btn-primary btn-lg">Login</button>
+        </div>
+        <div class="d-grid mb-3">
+          <a href="module4_mailstatus.html" class="btn btn-secondary btn-lg">Check Status</a>
+        </div>
+        <div class="d-flex align-items-center justify-content-center mb-3">
+          <div class="dropdown-divider w-25"></div>
+          <small class="mx-2">Or login with</small>
+          <div class="dropdown-divider w-25"></div>
+        </div>
+        <div class="mt-4">
+          <span>Don't have an account?</span>
+          <a href="module4_register.html" class="text-white">Sign Up</a>
+        </div>
+      </form>
+    </div>
+    <div class="back-button">
+      <a href="index.html" class="btn btn-secondary btn-lg">
+        <i class="fa fa-arrow-left"></i> Back
+      </a>
+    </div>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
